@@ -4,8 +4,8 @@ return {
   none             = "#171314",
   --14161D
   dark             = '#141d17',
-  comment          = "#5e736a",
-  popup_back       = '#516158',
+  comment          = "#4C544F",
+  popup_back       = '#4C544F',
   cursor_fg        = '#ced6d1',
   context          = '#516158',
   cursor_bg        = '#aeafad',
@@ -14,7 +14,7 @@ return {
   diff_change      = '#6CAEC0',
   cl_bg            = "#709176",
   diff_text        = '#568BB4',
-  line_fg          = "#556c5f",
+  line_fg          = "#4C544F",
   line_bg          = "#171314",
   gutter_bg        = "#171314",
   non_text         = "#60786b",
@@ -22,7 +22,7 @@ return {
   selection_fg     = "#496351",
   vsplit_fg        = "#cccccc",
   vsplit_bg        = "#212d23",
-  visual_select_bg = "#273229",
+  visual_select_bg = "#4C544F",
 
   red_key_w  = "#96596d",
   red_err    = "#963c3c",
