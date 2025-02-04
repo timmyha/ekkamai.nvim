@@ -598,11 +598,11 @@ M.plugins = {
     ["@variable.builtin"] = { fg = colors.pink },
     ["@define"] = { fg = colors.red_key_w },
     -----------------------------------------
-    ["@markup.heading.1.markdown"] = { bg = colors.pink, fg = colors.fg },
+    ["@markup.heading.1.markdown"] = { bg = colors.red_key_w, fg = colors.fg },
     ["@markup.heading.2.markdown"] = { bg = colors.green, fg = colors.fg },
     ["@markup.heading.3.markdown"] = { bg = colors.orange, fg = colors.fg },
     ["@markup.heading.4.markdown"] = { bg = colors.yellow, fg = colors.fg },
-    ["@markup.heading.5.markdown"] = { bg = colors.gray, fg = colors.fg },
+    ["@markup.heading.5.markdown"] = { bg = colors.blue_type, fg = colors.fg },
     ["@markup.heading.6.markdown"] = { bg = colors.fg, fg = colors.bg },
     RenderMarkdownH1Bg = { fg = colors.fg, bg = colors.pink },
     RenderMarkdownH2Bg = { fg = colors.fg, bg = colors.green },
