@@ -604,6 +604,8 @@ M.plugins = {
     ["@markup.heading.4.markdown"] = { bg = colors.yellow, fg = colors.fg },
     ["@markup.heading.5.markdown"] = { bg = colors.blue_type, fg = colors.fg },
     ["@markup.heading.6.markdown"] = { bg = colors.fg, fg = colors.bg },
+    ["@markup.strong"] = { bg = colors.bg, fg = colors.yellow },
+    ["@markup.uri"] = { bg = colors.bg, fg = colors.green },
     RenderMarkdownH1Bg = { fg = colors.fg, bg = colors.red_key_w },
     RenderMarkdownH2Bg = { fg = colors.fg, bg = colors.green },
     RenderMarkdownH3Bg = { fg = colors.fg, bg = colors.orange },
