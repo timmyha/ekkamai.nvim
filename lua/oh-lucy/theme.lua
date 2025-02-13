@@ -605,7 +605,7 @@ M.plugins = {
     ["@markup.heading.5.markdown"] = { bg = colors.blue_type, fg = colors.fg },
     ["@markup.heading.6.markdown"] = { bg = colors.fg, fg = colors.bg },
     ["@markup.strong"] = { bg = colors.bg, fg = colors.yellow },
-    ["@markup.italic"] = { bg = colors.bg, fg = colors.red_key_w
+    ["@markup.italic"] = { bg = colors.bg, fg = colors.red_key_w },
     ["@markup.quote"] = { bg = colors.bg, fg = colors.fg },
     RenderMarkdownH1Bg = { fg = colors.fg, bg = colors.red_key_w },
     RenderMarkdownH2Bg = { fg = colors.fg, bg = colors.green },
