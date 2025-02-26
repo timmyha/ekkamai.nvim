@@ -607,6 +607,7 @@ M.plugins = {
     ["@markup.strong"] = { bg = colors.bg, fg = colors.yellow },
     ["@markup.italic"] = { bg = colors.bg, fg = colors.red_key_w },
     ["@markup.quote"] = { bg = colors.bg, fg = colors.fg },
+    ["@highlights.system"] = { bg = colors.red_key_w, fg = colors.fg },
     RenderMarkdownH1Bg = { fg = colors.fg, bg = colors.red_key_w },
     RenderMarkdownH2Bg = { fg = colors.fg, bg = colors.green },
     RenderMarkdownH3Bg = { fg = colors.fg, bg = colors.orange },
