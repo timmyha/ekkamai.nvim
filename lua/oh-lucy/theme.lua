@@ -618,9 +618,9 @@ M.plugins = {
     RenderMarkdownQuote = { fg = colors.fg, bg = colors.context },
     RenderMarkdownUnchecked = { fg = colors.pink },
     RenderMarkdownChecked = { fg = colors.yellow },
-    System = { fg = colors.fg, bg = colors.context },
-    User = { fg = colors.fg, bg = colors.red_key_w },
-    Assistant  = { fg = colors.fg, bg = colors.yellow }
+    ChatSystem = { fg = colors.fg, bg = colors.context },
+    ChatUser = { fg = colors.fg, bg = colors.red_key_w },
+    ChatAssistant  = { fg = colors.fg, bg = colors.yellow }
 }
 
 return M
