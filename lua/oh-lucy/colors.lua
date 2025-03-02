@@ -1,7 +1,7 @@
 return {
   fg               = "#ced6d1",
-  bg               = "#171314",
-  none             = "#171314",
+  bg               = "#2E212A",
+  none             = "#2E212A",
   --14161D
   dark             = '#141d17',
   comment          = "#4C544F",
@@ -15,8 +15,8 @@ return {
   cl_bg            = "#709176",
   diff_text        = '#857499',
   line_fg          = "#4C544F",
-  line_bg          = "#171314",
-  gutter_bg        = "#171314",
+  line_bg          = "#2E212A",
+  gutter_bg        = "#2E212A",
   non_text         = "#60786b",
   selection_bg     = "#5e7e6d",
   selection_fg     = "#496351",
