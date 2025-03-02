@@ -89,4 +89,4 @@ return {
 --   orange_wr  = "#ffcc66",
 --   pink       = "#cc66ff",
 --   yellow     = "#ffcc66",
-}
+--   }
