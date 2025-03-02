@@ -77,7 +77,7 @@ return {
   blue_type  = '#628AD9',
   black1     = "#262626",
   black      = "#393939",
-  white1     = "#f2f4f8",
+  white1     = "#161616",
   white      = "#dde1e6",
   gray_punc  = "#dde1e6",
   gray2      = "#525252",
