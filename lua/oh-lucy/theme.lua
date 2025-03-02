@@ -17,6 +17,10 @@ local fg_options = {
     darker = colors.fg,
 }
 
+function getBg()
+    return bg_options[config.bgcolor] or colors.bg
+end
+
 M.base = {
     ---------------------------------------
     --        Styles
@@ -95,7 +99,7 @@ M.base = {
     NonText = { fg = colors.gray2 },
     Normal = {
         fg = fg_options[config.bgcolor] or colors.fg,
-        bg = bg_options[config.bgcolor] or colors.bg,
+        bg = getBg(),
     },
     NormalFloat = { bg = colors.dark },
     NormalNC = {
