@@ -71,11 +71,11 @@ return {
   vsplit_bg        = "#141d17",
   visual_select_bg = "#963c3c",
 
-  red_key_w  = "#F04195",
-  red_err    = "#963c3c",
-  green_func = '#62D963',
-  green      = "#628AD9",
-  blue_type  = '#628AD9',
+  red_key_w  = "#ff3399",
+  red_err    = "#ff3399",
+  green_func = '#00d364',
+  green      = "#00bfff",
+  blue_type  = '#00bfff',
   black1     = "#262626",
   black      = "#393939",
   white1     = "#161616",
@@ -85,10 +85,10 @@ return {
   gray1      = '#343842',
   gray       = "#21252D",
   orange     = "#ff7eb6",
-  boolean    = "#8F50F0",
-  orange_wr  = "#a37a5b",
-  pink       = "#8F50F0",
-  yellow     = "#D9B362",
+  boolean    = "#cc66ff",
+  orange_wr  = "#ffcc66",
+  pink       = "#cc66ff",
+  yellow     = "#ffcc66",
 }
         -- base00 = "#161616";
         -- base01 = "#262626";
