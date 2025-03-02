@@ -615,7 +615,7 @@ M.plugins = {
     RenderMarkdownH6Bg = { fg = colors.bg, bg = colors.fg },
     RenderMarkdownCode = { bg = colors.vsplit_bg },
     RenderMarkdownBullet = { fg = colors.pink },
-    RenderMarkdownQuote = { fg = colors.fg, bg = colors.context },
+    RenderMarkdownQuote = { fg = colors.fg, bg = colors.bg },
     RenderMarkdownUnchecked = { fg = colors.pink },
     RenderMarkdownChecked = { fg = colors.yellow },
     -- ChatSystem = { fg = colors.fg, bg = colors.context },
