@@ -18,7 +18,7 @@ local fg_options = {
 }
 
 function getBg()
-    return bg_options[config.bgcolor] or colors.bg
+    return "#234533"
 end
 
 M.base = {
