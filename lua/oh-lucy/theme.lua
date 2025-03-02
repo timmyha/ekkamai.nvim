@@ -18,7 +18,23 @@ local fg_options = {
 }
 
 function getBg()
-    return "#234533"
+    if config.bgcolor == "transparent" then
+        return "NONE"
+    elseif config.bgcolor == "light" then
+        return colors.fg
+    elseif config.bgcolor == "darker" then
+        return colors.bg_dark
+    else
+        return colors.bg
+    end
+end
+
+function getFg()
+    if config.bgcolor == "light" then
+        return colors.bg
+    else
+        return colors.fg
+    end
 end
 
 M.base = {
@@ -91,20 +107,20 @@ M.base = {
     ModeMsg = { fg = colors.fg, bg = colors.bg },
     MoreMsg = { fg = colors.orange_wr },
     MsgArea = {
-        fg = fg_options[config.bgcolor] or colors.fg,
-        bg = bg_options[config.bgcolor] or colors.bg,
+        fg = getFg() or colors.fg,
+        bg = getBg() or colors.bg,
     },
     MsgSeparator = { fg = colors.fg, bg = colors.bg },
 
     NonText = { fg = colors.gray2 },
     Normal = {
-        fg = fg_options[config.bgcolor] or colors.fg,
-        bg = getBg(),
+        fg = getFg() or colors.fg,
+        bg = getBg() or colors.bg,
     },
     NormalFloat = { bg = colors.dark },
     NormalNC = {
-        fg = fg_options[config.bgcolor] or colors.fg,
-        bg = bg_options[config.bgcolor] or colors.bg,
+        fg = getFg() or colors.fg,
+        bg = getBg() or colors.bg,
     },
     Number = { fg = colors.orange },
 
@@ -123,8 +139,8 @@ M.base = {
 
     Search = { fg = colors.line_fg, bg = colors.orange },
     SignColumn = {
-        fg = fg_options[config.bgcolor] or colors.line_fg,
-        bg = bg_options[config.bgcolor] or colors.line_bg,
+        fg = getFg() or colors.fg,
+        bg = getBg() or colors.bg,
     },
     Special = { fg = colors.gray_punc },
     SpecialChar = { fg = colors.yellow },
