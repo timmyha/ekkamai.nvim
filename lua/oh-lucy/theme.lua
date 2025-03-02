@@ -3,6 +3,20 @@ local config = require "oh-lucy.config"
 
 local M = {}
 
+local bg_options = {
+    transparent = "NONE",
+    dark = colors.bg,
+    darker = colors.bg_dark,
+    light = colors.fg,
+}
+
+local fg_options = {
+    light = colors.bg,
+    transparent = colors.fg,
+    dark = colors.fg,
+    darker = colors.fg,
+}
+
 M.base = {
     ---------------------------------------
     --        Styles
@@ -60,7 +74,10 @@ M.base = {
     Keyword = { fg = colors.red_key_w },
 
     Label = { fg = colors.red_key_w },
-    LineNr = { fg = colors.line_fg, bg = config.transparent_background and "NONE" or colors.line_bg },
+    LineNr = {
+        fg = fg_options[config.bgcolor] or colors.line_fg,
+        bg = bg_options[config.bgcolor] or colors.line_bg,
+    },
 
     Macro = { fg = colors.blue_type },
     MatchParen = { fg = colors.white1, bg = colors.black },
@@ -69,13 +86,22 @@ M.base = {
     MatchWordCur = { style = "underline" },
     ModeMsg = { fg = colors.fg, bg = colors.bg },
     MoreMsg = { fg = colors.orange_wr },
-    MsgArea = { fg = colors.fg, bg = config.transparent_background and "NONE" or colors.bg },
+    MsgArea = {
+        fg = fg_options[config.bgcolor] or colors.fg,
+        bg = bg_options[config.bgcolor] or colors.bg,
+    },
     MsgSeparator = { fg = colors.fg, bg = colors.bg },
 
     NonText = { fg = colors.gray2 },
-    Normal = { fg = colors.fg, bg = config.transparent_background and "NONE" or colors.bg },
+    Normal = {
+        fg = fg_options[config.bgcolor] or colors.fg,
+        bg = bg_options[config.bgcolor] or colors.bg,
+    },
     NormalFloat = { bg = colors.dark },
-    NormalNC = { fg = colors.white, bg = config.transparent_background and "NONE" or colors.bg },
+    NormalNC = {
+        fg = fg_options[config.bgcolor] or colors.fg,
+        bg = bg_options[config.bgcolor] or colors.bg,
+    },
     Number = { fg = colors.orange },
 
     Operator = { fg = colors.white },
@@ -92,7 +118,10 @@ M.base = {
     Repeat = { fg = colors.red_key_w },
 
     Search = { fg = colors.line_fg, bg = colors.orange },
-    SignColumn = { bg = config.transparent_background and "NONE" or colors.line_bg },
+    SignColumn = {
+        fg = fg_options[config.bgcolor] or colors.line_fg,
+        bg = bg_options[config.bgcolor] or colors.line_bg,
+    },
     Special = { fg = colors.gray_punc },
     SpecialChar = { fg = colors.yellow },
     SpecialComment = { fg = colors.pink },

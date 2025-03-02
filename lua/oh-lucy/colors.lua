@@ -47,6 +47,7 @@
 return {
   fg               = "#ffffff",
   bg               = "#161616",
+  bg_dark          = "#000000",
   none             = "#161616",
   --14161D
   dark             = '#262626',
@@ -61,8 +62,8 @@ return {
   cl_bg            = "#709176",
   diff_text        = '#568BB4',
   line_fg          = "#4C544F",
-  line_bg          = "#171314",
-  gutter_bg        = "#171314",
+  line_bg          = "#161616",
+  gutter_bg        = "#161616",
   non_text         = "#60786b",
   selection_bg     = "#5e7e6d",
   selection_fg     = "#496351",
