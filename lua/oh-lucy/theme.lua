@@ -422,7 +422,7 @@ M.plugins = {
     LspDiagnosticsHint = { fg = colors.blue_type }, -- Deprecated
     LspDiagnosticsInformation = { fg = colors.yellow }, -- Deprecated
     LspDiagnosticsSignHint = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsSignInformation = { fg = colors.yellow }, -- Deprecated
+    LspDiagnosticsSignInformation = { fg = colors.yellow, bg = colors.bg }, -- Deprecated
     LspDiagnosticsSignWarning = { fg = colors.orange_wr }, -- Deprecated
     LspDiagnosticsUnderlineError = { style = "underline" }, -- Deprecated
     LspDiagnosticsUnderlineHint = { style = "underline" }, -- Deprecated
