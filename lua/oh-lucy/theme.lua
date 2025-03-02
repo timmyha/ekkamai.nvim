@@ -151,7 +151,7 @@ M.base = {
     SpellLocal = { fg = colors.green, style = "underline" },
     SpellRare = { fg = colors.pink, style = "underline" },
     Statement = { fg = colors.red_key_w },
-    StatusLine = { fg = colors.dark, bg = colors.gray_punc },
+    StatusLine = { fg = colors.white, bg = colors.dark },
     StatusLineNC = { fg = colors.dark, bg = colors.gray_punc },
     StatusLineSeparator = { fg = colors.dark },
     StatusLineTerm = { fg = colors.green_func, bg = colors.black },
