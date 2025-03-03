@@ -3,40 +3,6 @@ local config = require "oh-lucy.config"
 
 local M = {}
 
-local bg_options = {
-    transparent = "NONE",
-    dark = colors.bg,
-    darker = colors.bg_dark,
-    light = colors.fg,
-}
-
-local fg_options = {
-    light = colors.bg,
-    transparent = colors.fg,
-    dark = colors.fg,
-    darker = colors.fg,
-}
-
-function getBg()
-    if config.bgcolor == "transparent" then
-        return "NONE"
-    elseif config.bgcolor == "light" then
-        return colors.fg
-    elseif config.bgcolor == "darker" then
-        return colors.bg_dark
-    else
-        return colors.bg
-    end
-end
-
-function getFg()
-    if config.bgcolor == "light" then
-        return colors.bg
-    else
-        return colors.fg
-    end
-end
-
 M.base = {
     ---------------------------------------
     --        Styles
@@ -54,12 +20,11 @@ M.base = {
     Character = { fg = colors.yellow },
     ColorColumn = { bg = colors.black1 },
     Comment = { fg = colors.comment, style = "italic" },
-    Conceal = { fg = colors.fg }, -- {bg = config.transparent_background and 'NONE' or colors.bg },
+    Conceal = { fg = colors.fg },
     Conditional = { fg = colors.red_key_w },
     Constant = { fg = colors.pink },
     Cursor = { fg = colors.yellow, bg = colors.bg },
     CursorColumn = { fg = "NONE", bg = "NONE" },
-    -- CursorIM = { fg = colors.cursor_fg, bg = colors.cursor_bg },
     CursorLine = { bg = "NONE" },
     CursorLineNr = { fg = colors.white, bg = colors.gutter_bg, style = "bold" },
 
@@ -73,9 +38,7 @@ M.base = {
     DiffRemoved = { fg = colors.red_key_w },
     DiffText = { fg = colors.white1 },
     DiffFile = { fg = colors.pink },
-    -- DiffIndexLine     = { fg = colors.gray3 },
 
-    -- EndOfBuffer = { fg = colors.bg },
     Error = { fg = colors.red_key_w, bg = colors.bg, style = "bold" },
     ErrorMsg = { fg = colors.gray, bg = colors.red_err, style = "bold" },
     Exception = { fg = colors.white },
@@ -95,8 +58,8 @@ M.base = {
 
     Label = { fg = colors.red_key_w },
     LineNr = {
-        fg = fg_options[config.bgcolor] or colors.line_fg,
-        bg = bg_options[config.bgcolor] or colors.line_bg,
+        fg = config.fgcolor or colors.line_fg,
+        bg = config.bgcolor or colors.line_bg,
     },
 
     Macro = { fg = colors.blue_type },
@@ -107,20 +70,20 @@ M.base = {
     ModeMsg = { fg = colors.fg, bg = colors.bg },
     MoreMsg = { fg = colors.orange_wr },
     MsgArea = {
-        fg = getFg() or colors.fg,
-        bg = getBg() or colors.bg,
+        fg = config.fgcolor or colors.fg,
+        bg = config.bgcolor or colors.bg,
     },
     MsgSeparator = { fg = colors.fg, bg = colors.bg },
 
     NonText = { fg = colors.gray2 },
     Normal = {
-        fg = getFg() or colors.fg,
-        bg = getBg() or colors.bg,
+        fg = config.fgcolor or colors.fg,
+        bg = config.bgcolor or colors.bg,
     },
     NormalFloat = { bg = colors.dark },
     NormalNC = {
-        fg = getFg() or colors.fg,
-        bg = getBg() or colors.bg,
+        fg = config.fgcolor or colors.fg,
+        bg = config.bgcolor or colors.bg,
     },
     Number = { fg = colors.orange },
 
@@ -139,8 +102,8 @@ M.base = {
 
     Search = { fg = colors.line_fg, bg = colors.orange },
     SignColumn = {
-        fg = getFg() or colors.fg,
-        bg = getBg() or colors.bg,
+        fg = config.fgcolor or colors.fg,
+        bg = config.bgcolor or colors.bg,
     },
     Special = { fg = colors.gray_punc },
     SpecialChar = { fg = colors.yellow },
@@ -346,7 +309,7 @@ M.plugins = {
     DiagnosticFloatingError = { fg = colors.red_err },
     DiagnosticFloatingHint = { fg = colors.blue_type },
     DiagnosticFloatingInfo = { fg = colors.yellow },
-    DiagnosticFloatingWarn = { fg = colors.orange_wr },
+    DiagnosticFloatingWarn = { fg = colors.orange_wr, bg = colors.bg },
 
     DiagnosticSignError = { fg = colors.red_err, bg = colors.line_bg },
     DiagnosticSignHint = { fg = colors.blue_type, bg = colors.line_bg },
