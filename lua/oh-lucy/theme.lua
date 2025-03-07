@@ -383,9 +383,9 @@ M.plugins = {
     LspDiagnosticsFloatingInformation = { fg = colors.yellow }, -- Deprecated
     LspDiagnosticsFloatingWarning = { fg = colors.orange_wr }, -- Deprecated
     LspDiagnosticsHint = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsInformation = { fg = colors.yellow }, -- Deprecated
+    LspDiagnosticsInformation = { fg = colors.blue_type }, -- Deprecated
     LspDiagnosticsSignHint = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsSignInformation = { fg = colors.yellow, bg = colors.bg }, -- Deprecated
+    LspDiagnosticsSignInformation = { fg = colors.blue_type, bg = colors.bg }, -- Deprecated
     LspDiagnosticsSignWarning = { fg = colors.orange_wr }, -- Deprecated
     LspDiagnosticsUnderlineError = { style = "underline" }, -- Deprecated
     LspDiagnosticsUnderlineHint = { style = "underline" }, -- Deprecated
