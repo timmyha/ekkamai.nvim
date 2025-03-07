@@ -317,7 +317,7 @@ M.plugins = {
     DiagnosticSignWarn = { fg = colors.orange_wr, bg = colors.line_bg },
 
     DiagnosticUnderlineError = { style = "underline" },
-    DiagnosticUnderlineHint = { style = "underline" },
+    DiagnosticUnderlineHint = { style = "underline", fg = colors.blue_type },
     DiagnosticUnderlineInfo = { style = "underline" },
     DiagnosticUnderlineWarn = { style = "underline" },
 
