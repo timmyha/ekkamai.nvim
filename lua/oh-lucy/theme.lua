@@ -63,7 +63,7 @@ M.base = {
     },
 
     Macro = { fg = colors.blue_type },
-    MatchParen = { fg = colors.white1, bg = colors.black },
+    MatchParen = { fg = colors.white1, bg = colors.red_err },
     MatchParenCur = { style = "underline" },
     MatchWord = { style = "underline" },
     MatchWordCur = { style = "underline" },
@@ -316,10 +316,10 @@ M.plugins = {
     DiagnosticSignInfo = { fg = colors.yellow, bg = colors.line_bg },
     DiagnosticSignWarn = { fg = colors.orange_wr, bg = colors.line_bg },
 
-    DiagnosticUnderlineError = { style = "underline" },
+    DiagnosticUnderlineError = { style = "underline", sp = colors.red_err },
     DiagnosticUnderlineHint = { style = "underline", sp = colors.blue_type },
-    DiagnosticUnderlineInfo = { style = "underline" },
-    DiagnosticUnderlineWarn = { style = "underline" },
+    DiagnosticUnderlineInfo = { style = "underline", sp = colors.yellow },
+    DiagnosticUnderlineWarn = { style = "underline", sp = colors.orange_wr },
 
     DiagnosticVirtualTextError = { fg = colors.red_err },
     DiagnosticVirtualTextHint = { fg = colors.gray2 },
