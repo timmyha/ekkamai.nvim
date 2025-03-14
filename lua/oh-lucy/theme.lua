@@ -633,6 +633,17 @@ M.plugins = {
     -- ChatSystem = { fg = colors.fg, bg = colors.context },
     -- ChatUser = { fg = colors.fg, bg = colors.red_key_w },
     -- ChatAssistant  = { fg = colors.fg, bg = colors.yellow }
+
+    LineflyNormal = { fg = colors.fg, bg = colors.red_key_w },
+    LineflyInsert = { fg = colors.fg, bg = colors.green },
+    LineflyVisual = { fg = colors.fg, bg = colors.yellow },
+    LineflyError = { fg = colors.fg, bg = colors.red_err },
+    LineflyGitAdd = { fg = colors.fg, bg = colors.diff_add },
+    LineflyGitChange = { fg = colors.fg, bg = colors.diff_change },
+    LineflyGitDelete = { fg = colors.fg, bg = colors.red_err },
+    LineflyDiagnosticError = { fg = colors.red_err },
+    LineflyDiagnosticWarning = { fg = colors.orange_wr },
+    LineflyDiagnosticInformation = { fg = colors.yellow },
 }
 
 return M
