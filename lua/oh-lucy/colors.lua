@@ -25,9 +25,9 @@ return {
 
   red        = "#996E8B",
   green      = "#639974",
-  blue       = '#698799',
+  blue       = "#698799",
   orange     = "#998870",
-  purple     = "#857499",
+  pink       = "#857499",
   yellow     = "#8E8F61",
   black1     = "#272932",
   black      = "#0a0d0b",
@@ -35,6 +35,6 @@ return {
   white      = "#E9E9E9",
   gray_punc  = "#7C7E8C",
   gray2      = "#6E7380",
-  gray1      = '#343842',
+  gray1      = "#343842",
   gray       = "#21252D",
 }
