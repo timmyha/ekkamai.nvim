@@ -15,32 +15,30 @@ M.base = {
     -----------------------------------------
     --        Editors settings
     -----------------------------------------
-    Boolean = { fg = colors.boolean, style = config.italic_booleans },
-
     Character = { fg = colors.yellow },
     ColorColumn = { bg = colors.black1 },
     Comment = { fg = colors.comment, style = "italic" },
     Conceal = { fg = colors.fg },
-    Conditional = { fg = colors.red_key_w },
-    Constant = { fg = colors.pink },
+    Conditional = { fg = colors.red },
+    Constant = { fg = colors.purple },
     Cursor = { fg = colors.yellow, bg = colors.bg },
     CursorColumn = { fg = "NONE", bg = "NONE" },
     CursorLine = { bg = "NONE" },
     CursorLineNr = { fg = colors.white, bg = colors.gutter_bg, style = "bold" },
 
     Debug = { fg = colors.fg },
-    Define = { fg = colors.blue_type },
+    Define = { fg = colors.blue },
     Delimiter = { fg = colors.gray_punc },
     DiffAdd = { fg = colors.green_func },
     DiffAdded = { fg = colors.green_func },
     DiffChange = { fg = colors.green_func },
-    DiffDelete = { fg = colors.red_key_w },
-    DiffRemoved = { fg = colors.red_key_w },
+    DiffDelete = { fg = colors.red },
+    DiffRemoved = { fg = colors.red },
     DiffText = { fg = colors.white1 },
-    DiffFile = { fg = colors.pink },
+    DiffFile = { fg = colors.purple },
 
-    Error = { fg = colors.red_key_w, bg = colors.bg, style = "bold" },
-    ErrorMsg = { fg = colors.gray, bg = colors.red_err, style = "bold" },
+    Error = { fg = colors.red, bg = colors.bg, style = "bold" },
+    ErrorMsg = { fg = colors.gray, bg = colors.red, style = "bold" },
     Exception = { fg = colors.white },
 
     Float = { fg = colors.orange },
@@ -52,23 +50,23 @@ M.base = {
     Identifier = { fg = colors.white1 },
     Ignore = { fg = colors.gray_punc },
     IncSearch = { fg = colors.bg, bg = colors.orange },
-    Include = { fg = colors.blue_type },
+    Include = { fg = colors.blue },
 
-    Keyword = { fg = colors.red_key_w },
+    Keyword = { fg = colors.red },
 
-    Label = { fg = colors.red_key_w },
+    Label = { fg = colors.red },
     LineNr = {
         fg = config.fgcolor or colors.line_fg,
         bg = config.bgcolor or colors.line_bg,
     },
 
-    Macro = { fg = colors.blue_type },
-    MatchParen = { fg = colors.white1, bg = colors.red_err },
+    Macro = { fg = colors.blue },
+    MatchParen = { fg = colors.white1, bg = colors.red },
     MatchParenCur = { style = "underline" },
     MatchWord = { style = "underline" },
     MatchWordCur = { style = "underline" },
     ModeMsg = { fg = colors.fg, bg = colors.bg },
-    MoreMsg = { fg = colors.orange_wr },
+    MoreMsg = { fg = colors.orange },
     MsgArea = {
         fg = config.fgcolor or colors.fg,
         bg = config.bgcolor or colors.bg,
@@ -92,13 +90,13 @@ M.base = {
     PmenuSbar = { bg = colors.gray },
     PmenuSel = { fg = colors.line_fg, bg = colors.black },
     PmenuThumb = { bg = colors.black },
-    PreCondit = { fg = colors.blue_type },
-    PreProc = { fg = colors.blue_type },
+    PreCondit = { fg = colors.blue },
+    PreProc = { fg = colors.blue },
 
     Question = { fg = colors.green_func },
-    QuickFixLine = { fg = colors.orange_wr },
+    QuickFixLine = { fg = colors.orange },
 
-    Repeat = { fg = colors.red_key_w },
+    Repeat = { fg = colors.red },
 
     Search = { fg = colors.line_fg, bg = colors.orange },
     SignColumn = {
@@ -107,19 +105,19 @@ M.base = {
     },
     Special = { fg = colors.gray_punc },
     SpecialChar = { fg = colors.yellow },
-    SpecialComment = { fg = colors.pink },
+    SpecialComment = { fg = colors.purple },
     SpecialKey = { fg = colors.gray_punc, style = "bold" },
     SpellBad = { fg = colors.fg, style = "undercurl" },
     SpellCap = { fg = colors.fg, style = "undercurl" },
     SpellLocal = { fg = colors.fg, style = "undercurl" },
     SpellRare = { fg = colors.fg, style = "undercurl" },
-    Statement = { fg = colors.red_key_w },
+    Statement = { fg = colors.red },
     StatusLine = { fg = colors.comment, bg = colors.bg },
     StatusLineNC = { fg = colors.comment, bg = colors.black },
     StatusLineSeparator = { fg = colors.dark },
     StatusLineTerm = { fg = colors.green_func, bg = colors.black },
     StatusLineTermNC = { fg = colors.gray_punc, bg = colors.black },
-    StorageClass = { fg = colors.blue_type },
+    StorageClass = { fg = colors.blue },
     String = { fg = colors.yellow },
     Structure = { fg = colors.green_func },
     Substitute = { fg = colors.gray2, bg = colors.orange },
@@ -132,15 +130,15 @@ M.base = {
     TermCursorNC = { fg = colors.cursor_fg, bg = colors.cursor_bg },
     Title = { fg = colors.gray_punc },
     Todo = { fg = colors.yellow, style = "bold" },
-    Type = { fg = colors.blue_type },
-    Typedef = { fg = colors.blue_type },
+    Type = { fg = colors.blue },
+    Typedef = { fg = colors.blue },
 
     Variable = { fg = colors.white },
-    VertSplit = { fg = colors.vsplit_bg },
+    VertSplit = { fg = colors.bg },
     Visual = { fg = "NONE", bg = colors.visual_select_bg, style = "bold" },
     VisualNOS = { fg = colors.selection_fg, bg = colors.selection_bg },
 
-    WarningMsg = { fg = colors.orange_wr, bg = colors.none },
+    WarningMsg = { fg = colors.orange, bg = colors.none },
     Whitespace = { fg = colors.non_text },
     WildMenu = { fg = colors.fg },
     lCursor = { fg = colors.cursor_fg, bg = colors.cursor_bg },
@@ -149,19 +147,19 @@ M.base = {
     markdownBold = { fg = colors.white, style = "bold" },
     markdownCode = { fg = colors.orange },
     markdownCodeBlock = { fg = colors.orange },
-    markdownUrl = { fg = colors.pink, style = "underline" },
-    markdownCodeError = { fg = colors.red_err },
+    markdownUrl = { fg = colors.purple, style = "underline" },
+    markdownCodeError = { fg = colors.red },
     markdownH1 = { fg = colors.white },
     markdownH2 = { fg = colors.white },
     markdownH3 = { fg = colors.white },
     markdownH4 = { fg = colors.white },
     markdownH5 = { fg = colors.white },
     markdownH6 = { fg = colors.white },
-    markdownId = { fg = colors.pink },
+    markdownId = { fg = colors.purple },
     markdownItalic = { gf = colors.white, style = "italic" },
     markdownLinkText = { fg = colors.white },
     markdownRule = { fg = colors.accent },
-    markdownListMarker = { fg = colors.red_key_w },
+    markdownListMarker = { fg = colors.red },
     markdownHeadingDelimiter = { fg = colors.white },
     markdownHeadingRule = { fg = colors.accent },
     markdownUrlTitleDelimiter = { fg = colors.white },
@@ -171,7 +169,7 @@ M.base = {
     markdownIdDeclaration = { fg = colors.white },
     markdownIdDelimiter = { fg = colors.gray2 },
     markdownLinkDelimiter = { fg = colors.gray2 },
-    markdownOrderedListMarker = { fg = colors.red_key_w },
+    markdownOrderedListMarker = { fg = colors.red },
 
     -----------------------------------------
     --        end Editors settings
@@ -186,18 +184,18 @@ M.plugins = {
     BufferCurrent = { fg = colors.fg, bg = colors.gray },
     BufferCurrentIndex = { fg = colors.fg, bg = colors.bg },
     BufferCurrentMod = { fg = colors.yellow, bg = colors.bg },
-    BufferCurrentSign = { fg = colors.blue_type, bg = colors.bg },
-    BufferCurrentTarget = { fg = colors.red_key_w, bg = colors.bg, style = "bold" },
+    BufferCurrentSign = { fg = colors.blue, bg = colors.bg },
+    BufferCurrentTarget = { fg = colors.red, bg = colors.bg, style = "bold" },
     BufferInactive = { fg = colors.gray2, bg = colors.dark },
     BufferInactiveIndex = { fg = colors.gray2, bg = colors.dark },
     BufferInactiveMod = { fg = colors.yellow, bg = colors.dark },
     BufferInactiveSign = { fg = colors.gray2, bg = colors.dark },
-    BufferInactiveTarget = { fg = colors.red_key_w, bg = colors.dark, style = "bold" },
+    BufferInactiveTarget = { fg = colors.red, bg = colors.dark, style = "bold" },
     BufferVisible = { fg = colors.fg, bg = colors.bg },
     BufferVisibleIndex = { fg = colors.fg, bg = colors.bg },
     BufferVisibleMod = { fg = colors.yellow, bg = colors.bg },
     BufferVisibleSign = { fg = colors.green, bg = colors.bg },
-    BufferVisibleTarget = { fg = colors.red_key_w, bg = colors.bg, style = "bold" },
+    BufferVisibleTarget = { fg = colors.red, bg = colors.bg, style = "bold" },
     BufferLineFill = { fg = colors.fg, bg = colors.dark, style = "bold" },
     BufferLineSeparator = { fg = colors.fg, bg = colors.bg },
     BufferLineTab = { fg = colors.fg, bg = colors.bg },
@@ -212,9 +210,9 @@ M.plugins = {
 
     -----------------------------------------
 
-    WhichKey = { fg = colors.blue_type },
-    WhichKeySeperator = { fg = colors.red_key_w },
-    WhichKeyGroup = { fg = colors.pink },
+    WhichKey = { fg = colors.blue },
+    WhichKeySeperator = { fg = colors.red },
+    WhichKeyGroup = { fg = colors.purple },
     WhichKeyDesc = { fg = colors.white },
     WhichKeyFloat = { bg = colors.dark },
 
@@ -225,22 +223,22 @@ M.plugins = {
     CmpDocumentation = { fg = colors.fg },
     CmpDocumentationBorder = { fg = colors.gray2 },
     CmpItemAbbr = { fg = colors.fg },
-    CmpItemAbbrMatch = { fg = colors.blue_type },
-    CmpItemAbbrMatchFuzzy = { fg = colors.blue_type },
+    CmpItemAbbrMatch = { fg = colors.blue },
+    CmpItemAbbrMatchFuzzy = { fg = colors.blue },
     CmpItemKind = { fg = colors.green_func },
-    CmpItemKindMethod = { fg = colors.blue_type },
+    CmpItemKindMethod = { fg = colors.blue },
     CmpItemKindConstructor = { fg = colors.yellow },
-    CmpItemKindClass = { fg = colors.red_key_w },
+    CmpItemKindClass = { fg = colors.red },
     CmpItemKindVariabl = { fg = colors.white },
     CmpItemKindField = { fg = colors.white },
     CmpItemKindProperty = { fg = colors.white },
     CmpItemKindEnumMember = { fg = colors.orange },
     CmpItemKindConstant = { fg = colors.orange },
-    CmpItemKindEnum = { fg = colors.blue_type },
-    CmpItemKindStruct = { fg = colors.blue_type },
-    CmpItemKindKeyword = { fg = colors.pink },
-    CmpItemMenu = { fg = colors.pink },
-    CmpItemKindOperator = { fg = colors.red_key_w },
+    CmpItemKindEnum = { fg = colors.blue },
+    CmpItemKindStruct = { fg = colors.blue },
+    CmpItemKindKeyword = { fg = colors.purple },
+    CmpItemMenu = { fg = colors.purple },
+    CmpItemKindOperator = { fg = colors.red },
     -----------------------------------------
 
     -----------------------------------------
@@ -254,7 +252,7 @@ M.plugins = {
     -----------------------------------------
     --   Debug:
     -----------------------------------------
-    debugBreakpoint = { fg = colors.red_key_w, style = "reverse" },
+    debugBreakpoint = { fg = colors.red, style = "reverse" },
     debugPc = { bg = colors.white1 },
     -----------------------------------------
 
@@ -262,10 +260,10 @@ M.plugins = {
     --   Diffview
     -----------------------------------------
     DiffViewNormal = { fg = colors.gray2, bg = colors.dark },
-    DiffviewFilePanelDeletion = { fg = colors.red_err },
+    DiffviewFilePanelDeletion = { fg = colors.red },
     DiffviewFilePanelInsertion = { fg = colors.diff_add },
     DiffviewStatusAdded = { fg = colors.diff_add },
-    DiffviewStatusDeleted = { fg = colors.red_err },
+    DiffviewStatusDeleted = { fg = colors.red },
     DiffviewStatusModified = { fg = colors.diff_change },
     DiffviewStatusRenamed = { fg = colors.diff_change },
     DiffviewVertSplit = { bg = colors.bg },
@@ -276,7 +274,7 @@ M.plugins = {
     -----------------------------------------
     GitSignsAdd = { fg = colors.green_func, bg = colors.line_bg },
     GitSignsChange = { fg = colors.diff_change, bg = colors.line_bg },
-    GitSignsDelete = { fg = colors.red_key_w, bg = colors.line_bg },
+    GitSignsDelete = { fg = colors.red, bg = colors.line_bg },
     -----------------------------------------
 
     -----------------------------------------
@@ -284,7 +282,7 @@ M.plugins = {
     -----------------------------------------
     GitGutterAdd = { fg = colors.diff_add },
     GitGutterChange = { fg = colors.diff_change },
-    GitGutterDelete = { fg = colors.red_err },
+    GitGutterDelete = { fg = colors.red },
     -----------------------------------------
 
     -----------------------------------------
@@ -300,28 +298,28 @@ M.plugins = {
     --   Lsp: neovim.io/doc/user/lsp.html
     -----------------------------------------
     DiagnosticVirtualTextInfo = { fg = colors.yellow },
-    DiagnosticHint = { fg = colors.blue_type },
-    DiagnosticError = { fg = colors.red_err },
+    DiagnosticHint = { fg = colors.blue },
+    DiagnosticError = { fg = colors.red },
     DiagnosticInfo = { fg = colors.yellow },
-    DiagnosticVirtualTextWarn = { fg = colors.orange_wr },
-    DiagnosticWarn = { fg = colors.orange_wr },
+    DiagnosticVirtualTextWarn = { fg = colors.orange },
+    DiagnosticWarn = { fg = colors.orange },
 
-    DiagnosticFloatingError = { fg = colors.red_err },
-    DiagnosticFloatingHint = { fg = colors.blue_type },
+    DiagnosticFloatingError = { fg = colors.red },
+    DiagnosticFloatingHint = { fg = colors.blue },
     DiagnosticFloatingInfo = { fg = colors.yellow },
-    DiagnosticFloatingWarn = { fg = colors.orange_wr, bg = colors.bg },
+    DiagnosticFloatingWarn = { fg = colors.orange, bg = colors.bg },
 
-    DiagnosticSignError = { fg = colors.red_err, bg = colors.line_bg },
-    DiagnosticSignHint = { fg = colors.blue_type, bg = colors.line_bg },
+    DiagnosticSignError = { fg = colors.red, bg = colors.line_bg },
+    DiagnosticSignHint = { fg = colors.blue, bg = colors.line_bg },
     DiagnosticSignInfo = { fg = colors.yellow, bg = colors.line_bg },
-    DiagnosticSignWarn = { fg = colors.orange_wr, bg = colors.line_bg },
+    DiagnosticSignWarn = { fg = colors.orange, bg = colors.line_bg },
 
-    DiagnosticUnderlineError = { style = "underline", sp = colors.red_err },
-    DiagnosticUnderlineHint = { style = "underline", sp = colors.blue_type },
-    DiagnosticUnderlineInfo = { style = "underline", sp = colors.blue_type },
-    DiagnosticUnderlineWarn = { style = "underline", sp = colors.orange_wr },
+    DiagnosticUnderlineError = { style = "underline", sp = colors.red },
+    DiagnosticUnderlineHint = { style = "underline", sp = colors.blue },
+    DiagnosticUnderlineInfo = { style = "underline", sp = colors.blue },
+    DiagnosticUnderlineWarn = { style = "underline", sp = colors.orange },
 
-    DiagnosticVirtualTextError = { fg = colors.red_err },
+    DiagnosticVirtualTextError = { fg = colors.red },
     DiagnosticVirtualTextHint = { fg = colors.gray2 },
     -----------------------------------------
 
@@ -330,73 +328,73 @@ M.plugins = {
     -----------------------------------------
     Directory = { fg = colors.white },
     NERDTreeUp = { fg = colors.yellow },
-    NERDTreeDir = { fg = colors.blue_type },
+    NERDTreeDir = { fg = colors.blue },
     NERDTreeOpenable = { fg = colors.comment },
-    NERDTreeClosable = { fg = colors.red_key_w },
+    NERDTreeClosable = { fg = colors.red },
     NERDTreeIgnore = { fg = colors.comment },
     NERDTreeHelpKey = { fg = colors.white },
-    NERDTreeHelpTitle = { fg = colors.pink },
+    NERDTreeHelpTitle = { fg = colors.purple },
     NERDTreeToggleOn = { fg = colors.green_func },
     NERDTreeToggleOff = { fg = colors.orange },
     NERDTreeHelpCommand = { fg = colors.yellow },
     NERDTreeFile = { fg = colors.white },
-    NERDTreeLinkTarget = { fg = colors.blue_type },
+    NERDTreeLinkTarget = { fg = colors.blue },
     NERDTreeLinkFile = { fg = colors.green_func },
-    NERDTreeLinkDir = { fg = colors.pink },
+    NERDTreeLinkDir = { fg = colors.purple },
     NERDTreeNodeDelimiters = { fg = colors.comment },
     NERDTreeDirSlash = { fg = colors.comment },
     NERDTreeExecFile = { fg = colors.green_func },
     NERDTreeRO = { fg = colors.orange },
     NERDTreeBookmarkName = { fg = colors.orange },
-    NERDTreeFlags = { fg = colors.red_key_w },
-    NERDTreeCWD = { fg = colors.red_key_w },
-    NERDTreeBookmarksLeader = { fg = colors.blue_type },
-    NERDTreeBookmarksHeader = { fg = colors.red_key_w },
+    NERDTreeFlags = { fg = colors.red },
+    NERDTreeCWD = { fg = colors.red },
+    NERDTreeBookmarksLeader = { fg = colors.blue },
+    NERDTreeBookmarksHeader = { fg = colors.red },
     NERDTreeBookmark = { fg = colors.orange },
     NERDTreePart = { fg = colors.orange },
-    NERDTreePartFile = { fg = colors.blue_type },
+    NERDTreePartFile = { fg = colors.blue },
     NERDTreeCurrentNode = { fg = colors.comment },
 
     -----------------------------------------
     -- Startify: github.com/mhinz/vim-startify
     -----------------------------------------
     StartifyEndOfBuffer = { fg = colors.non_text },
-    StartifyNumber = { fg = colors.red_key_w },
+    StartifyNumber = { fg = colors.red },
     StartifySelect = { fg = colors.comment },
     StartifyBracket = { fg = colors.white },
     StartifySpecial = { fg = colors.yellow },
     StartifyVar = { fg = colors.comment },
     StartifyPath = { fg = colors.comment },
-    StartifyFile = { fg = colors.blue_type },
+    StartifyFile = { fg = colors.blue },
     StartifySlash = { fg = colors.comment },
-    StartifyHeader = { fg = colors.blue_type },
-    StartifyFooter = { fg = colors.pink },
-    StartifySection = { fg = colors.pink },
+    StartifyHeader = { fg = colors.blue },
+    StartifyFooter = { fg = colors.purple },
+    StartifySection = { fg = colors.purple },
 
     -----------------------------------------
     --   LspDiagnostics:
     -----------------------------------------
-    LspDiagnosticsDefaultHint = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsError = { fg = colors.red_err }, -- Deprecated
-    LspDiagnosticsFloatingError = { fg = colors.red_err }, -- Deprecated
-    LspDiagnosticsFloatingHint = { fg = colors.blue_type }, -- Deprecated
+    LspDiagnosticsDefaultHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsFloatingError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsFloatingHint = { fg = colors.blue }, -- Deprecated
     LspDiagnosticsFloatingInformation = { fg = colors.yellow }, -- Deprecated
-    LspDiagnosticsFloatingWarning = { fg = colors.orange_wr }, -- Deprecated
-    LspDiagnosticsHint = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsInformation = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsSignHint = { fg = colors.blue_type }, -- Deprecated
-    LspDiagnosticsSignInformation = { fg = colors.blue_type, bg = colors.bg }, -- Deprecated
-    LspDiagnosticsSignWarning = { fg = colors.orange_wr }, -- Deprecated
+    LspDiagnosticsFloatingWarning = { fg = colors.orange }, -- Deprecated
+    LspDiagnosticsHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsInformation = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsSignHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsSignInformation = { fg = colors.blue, bg = colors.bg }, -- Deprecated
+    LspDiagnosticsSignWarning = { fg = colors.orange }, -- Deprecated
     LspDiagnosticsUnderlineError = { style = "underline" }, -- Deprecated
     LspDiagnosticsUnderlineHint = { style = "underline" }, -- Deprecated
     LspDiagnosticsUnderlineWarning = { style = "underline" }, -- Deprecated
-    LspDiagnosticsVirtualTextWarning = { fg = colors.orange_wr }, -- Deprecated
-    LspDiagnosticsWarning = { fg = colors.orange_wr }, -- Deprecated
+    LspDiagnosticsVirtualTextWarning = { fg = colors.orange }, -- Deprecated
+    LspDiagnosticsWarning = { fg = colors.orange }, -- Deprecated
     LspReferenceRead = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
     LspReferenceText = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
     LspReferenceWrite = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
-    LspDiagnosticsDefaultError = { fg = colors.red_err }, -- Deprecated
-    LspDiagnosticsSignError = { fg = colors.red_err }, -- Deprecated
+    LspDiagnosticsDefaultError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsSignError = { fg = colors.red }, -- Deprecated
     LspDiagnosticsDefaultWarning = { fg = colors.yellow }, -- Deprecated
     LspDiagnosticsDefaultInformation = { fg = colors.yellow }, -- Deprecated
     LspDiagnosticsVirtualTextHint = { fg = colors.gray2 }, -- Deprecated
@@ -420,29 +418,29 @@ M.plugins = {
     -----------------------------------------
     -- for python language:
     -----------------------------------------
-    pythonConditional = { fg = colors.red_key_w },
-    pythonException = { fg = colors.pink },
+    pythonConditional = { fg = colors.red },
+    pythonException = { fg = colors.purple },
     pythonFunction = { fg = colors.green_func },
-    pythonInclude = { fg = colors.red_key_w },
-    pythonOperator = { fg = colors.red_key_w },
+    pythonInclude = { fg = colors.red },
+    pythonOperator = { fg = colors.red },
     pythonStatement = { fg = colors.white },
-    pythonBoolean = { fg = colors.white },
+    pythonpurple = { fg = colors.white },
     -----------------------------------------
 
     -----------------------------------------
     --    Neogit: github.com/TimUntersberger/neogit
     -----------------------------------------
-    NeogitBranch = { fg = colors.pink },
-    NeogitRemote = { fg = colors.pink },
+    NeogitBranch = { fg = colors.purple },
+    NeogitRemote = { fg = colors.purple },
     NeogitHunkHeader = { fg = colors.accent, bg = colors.dark },
     NeogitDiffContext = { fg = colors.accent, bg = colors.bg },
     NeogitDiffAdd = { fg = colors.diff_add, bg = colors.dark },
-    NeogitDiffDelete = { fg = colors.red_err, bg = colors.dark },
+    NeogitDiffDelete = { fg = colors.red, bg = colors.dark },
     -- Neogit...Highlight is when group is focused
     NeogitHunkHeaderHighlight = { fg = colors.accent, bg = colors.dark },
     NeogitDiffContextHighlight = { fg = colors.accent, bg = colors.bg },
     NeogitDiffAddHighlight = { fg = colors.diff_add, bg = colors.dark },
-    NeogitDiffDeleteHighlight = { fg = colors.red_err, bg = colors.dark },
+    NeogitDiffDeleteHighlight = { fg = colors.red, bg = colors.dark },
     -----------------------------------------
 
     -----------------------------------------
@@ -454,13 +452,13 @@ M.plugins = {
     NvimTreeExecFile = { fg = colors.green },
     NvimTreeFolderIcon = { fg = colors.comment },
     NvimTreeFolderName = { fg = colors.white1 },
-    NvimTreeGitDeleted = { fg = colors.red_err },
+    NvimTreeGitDeleted = { fg = colors.red },
     NvimTreeGitDirty = { fg = colors.diff_add },
     NvimTreeGitMerge = { fg = colors.diff_change },
     NvimTreeGitNew = { fg = colors.diff_add },
     NvimTreeGitRenamed = { fg = colors.diff_change },
     NvimTreeGitStaged = { fg = colors.diff_add },
-    NvimTreeImageFile = { fg = colors.pink },
+    NvimTreeImageFile = { fg = colors.purple },
     NvimTreeIndentMarker = { fg = colors.comment },
     NvimTreeNormal = { fg = colors.white1, bg = colors.black },
     NvimTreeNormalNC = { bg = colors.black },
@@ -476,7 +474,7 @@ M.plugins = {
     --    telescope: github.com/nvim-telescope/telescope.nvim
     -----------------------------------------
     TelescopeBorder = { fg = colors.white, bg = config.transparent_background and "NONE" or colors.bg },
-    TelescopeMatching = { fg = colors.blue_type },
+    TelescopeMatching = { fg = colors.blue },
     TelescopePromptPrefix = { fg = colors.green_func },
     TelescopeSelection = { fg = colors.line_fg, bg = colors.black },
     -----------------------------------------
@@ -485,31 +483,31 @@ M.plugins = {
     -- https://github.com/folke/trouble.nvim
     -----------------------------------------
     -----------------------------------------
-    TroubleTextInformation = { fg = colors.blue_type },
+    TroubleTextInformation = { fg = colors.blue },
     TroubleFile = { fg = colors.yellow }, -- the source file that has error
-    TroubleFoldIcon = { fg = colors.blue_type }, -- fold icon color
-    TroubleCount = { fg = colors.red_key_w },
-    TroubleError = { fg = colors.red_key_w, bg = colors.line_fg },
+    TroubleFoldIcon = { fg = colors.blue }, -- fold icon color
+    TroubleCount = { fg = colors.red },
+    TroubleError = { fg = colors.red, bg = colors.line_fg },
 
-    TroubleTextError = { fg = colors.red_key_w }, -- error info text
+    TroubleTextError = { fg = colors.red }, -- error info text
     TroubleNormal = { fg = colors.white },
     TroubleLocation = { fg = colors.white }, -- location of error
     TroubleIndent = { fg = colors.comment }, -- indent color
 
-    TroubleCode = { fg = colors.orange_wr },
-    TroubleSignError = { fg = colors.red_key_w }, -- error sign color
+    TroubleCode = { fg = colors.orange },
+    TroubleSignError = { fg = colors.red }, -- error sign color
 
-    TroubleSignWarning = { fg = colors.orange_wr },
-    TroubleWarning = { fg = colors.orange_wr },
-    TroublePreview = { fg = colors.red_key_w },
+    TroubleSignWarning = { fg = colors.orange },
+    TroubleWarning = { fg = colors.orange },
+    TroublePreview = { fg = colors.red },
     TroubleSignInformation = { fg = colors.white },
 
-    TroubleSource = { fg = colors.blue_type },
+    TroubleSource = { fg = colors.blue },
     TroubleSignHint = { fg = colors.green },
     TroubleSignOther = { fg = colors.green },
-    TroubleTextWarning = { fg = colors.orange_wr },
+    TroubleTextWarning = { fg = colors.orange },
     TroubleInformation = { fg = colors.white },
-    TroubleHint = { fg = colors.orange_wr },
+    TroubleHint = { fg = colors.orange },
     TroubleTextHint = { fg = colors.white },
     TroubleText = { fg = colors.white },
 
@@ -519,13 +517,13 @@ M.plugins = {
     -- CodeActionMenu: github.com/weilbith/nvim-code-action-menu
     -----------------------------------------
 
-    CodeActionMenuWarningMessageText = { fg = colors.orange_wr },
-    CodeActionMenuWarningMessageBorder = { fg = colors.red_key_w },
-    CodeActionMenuMenuIndex = { fg = colors.blue_type },
+    CodeActionMenuWarningMessageText = { fg = colors.orange },
+    CodeActionMenuWarningMessageBorder = { fg = colors.red },
+    CodeActionMenuMenuIndex = { fg = colors.blue },
     CodeActionMenuMenuKind = { fg = colors.green },
     CodeActionMenuMenuTitle = { fg = colors.white },
     CodeActionMenuMenuDisabled = { fg = colors.comment },
-    CodeActionMenuMenuSelection = { fg = colors.blue_type },
+    CodeActionMenuMenuSelection = { fg = colors.blue },
     CodeActionMenuDetailsTitle = { fg = colors.white },
     CodeActionMenuDetailsLabel = { fg = colors.yellow },
     CodeActionMenuDetailsPreferred = { fg = colors.green },
@@ -539,8 +537,8 @@ M.plugins = {
     cmakeCommand = { fg = colors.white },
     cmakeArguments = { fg = colors.white },
     cmakeKWvariable_watch = { fg = colors.white },
-    cmakeKWproject = { fg = colors.pink },
-    cmakeGeneratorExpressions = { fg = colors.pink },
+    cmakeKWproject = { fg = colors.purple },
+    cmakeGeneratorExpressions = { fg = colors.purple },
     cmakeVariable = { fg = colors.white },
     cmakeKWuse_mangled_mesa = { fg = colors.fg, style = "italic" },
     -----------------------------------------
@@ -550,99 +548,98 @@ M.plugins = {
     -----------------------------------------
     ["@annotation"] = { fg = colors.yellow },
     ["@attribute"] = { fg = colors.white },
-    ["@boolean"] = { fg = colors.pink, style = config.italic_booleans },
     ["@character"] = { fg = colors.yellow },
     ["@character.special"] = { fg = colors.yellow },
     ["@comment"] = { fg = colors.comment, style = "italic" },
-    ["@conditional"] = { fg = colors.red_key_w },
-    ["@constant.builtin"] = { fg = colors.pink },
-    ["@constant.macro"] = { fg = colors.blue_type },
-    ["@constant"] = { fg = colors.pink },
+    ["@conditional"] = { fg = colors.red },
+    ["@constant.builtin"] = { fg = colors.purple },
+    ["@constant.macro"] = { fg = colors.blue },
+    ["@constant"] = { fg = colors.purple },
     ["@constructor"] = { fg = colors.white },
     ["@text.emphasis"] = { style = "italic" },
-    ["@error"] = { fg = colors.red_err, bg = colors.bg, style = "bold" },
-    ["@exception"] = { fg = colors.red_key_w },
+    ["@error"] = { fg = colors.red, bg = colors.bg, style = "bold" },
+    ["@exception"] = { fg = colors.red },
     ["@field"] = { fg = colors.white },
-    ["@float"] = { fg = colors.pink },
+    ["@float"] = { fg = colors.purple },
     ["@function.builtin"] = { fg = colors.green_func },
-    ["@function.macro"] = { fg = colors.blue_type },
+    ["@function.macro"] = { fg = colors.blue },
     ["@function"] = { fg = colors.green_func },
     ["@function.call"] = { fg = colors.green_func },
-    ["@include"] = { fg = colors.red_key_w },
-    ["@keyword"] = { fg = colors.red_key_w },
-    ["@keyword.function"] = { fg = colors.red_key_w },
-    ["@keyword.operator"] = { fg = colors.red_key_w },
-    ["@keyword.return"] = { fg = colors.red_key_w },
+    ["@include"] = { fg = colors.red },
+    ["@keyword"] = { fg = colors.red },
+    ["@keyword.function"] = { fg = colors.red },
+    ["@keyword.operator"] = { fg = colors.red },
+    ["@keyword.return"] = { fg = colors.red },
     ["@none"] = { fg = colors.orange },
-    ["@label"] = { fg = colors.pink },
+    ["@label"] = { fg = colors.purple },
     ["@text.literal"] = { fg = colors.yellow },
     ["@method"] = { fg = colors.green_func },
     ["@method.call"] = { fg = colors.green_func },
-    ["@namespace"] = { fg = colors.blue_type },
-    ["@number"] = { fg = colors.pink },
-    ["@operator"] = { fg = colors.red_key_w },
+    ["@namespace"] = { fg = colors.blue },
+    ["@number"] = { fg = colors.purple },
+    ["@operator"] = { fg = colors.red },
     ["@parameter"] = { fg = colors.white },
     ["@parameter.reference"] = { fg = colors.white },
-    ["@preproc"] = { fg = colors.red_key_w },
+    ["@preproc"] = { fg = colors.red },
     ["@property"] = { fg = colors.white },
     ["@punctuation.bracket"] = { fg = colors.gray_punc },
     ["@punctuation.delimiter"] = { fg = colors.gray_punc },
     ["@punctuation.special"] = { fg = colors.gray_punc },
-    ["@repeat"] = { fg = colors.red_key_w },
-    ["@storageclass"] = { fg = colors.blue_type },
+    ["@repeat"] = { fg = colors.red },
+    ["@storageclass"] = { fg = colors.blue },
     ["@string"] = { fg = colors.yellow },
-    ["@string.escape"] = { fg = colors.boolean },
+    ["@string.escape"] = { fg = colors.purple },
     ["@string.regex"] = { fg = colors.yellow },
     ["@text.strong"] = { fg = colors.yellow },
     ["@symbol"] = { fg = colors.white },
-    ["@tag"] = { fg = colors.red_key_w },
+    ["@tag"] = { fg = colors.red },
     ["@tag.delimiter"] = { fg = colors.gray_punc },
     ["@text"] = { fg = colors.fg },
     ["@text.title"] = { fg = colors.white, style = "bold" },
-    ["@type"] = { fg = colors.blue_type },
-    ["@type.builtin"] = { fg = colors.red_key_w },
-    ["@type.definition"] = { fg = colors.red_key_w },
+    ["@type"] = { fg = colors.blue },
+    ["@type.builtin"] = { fg = colors.red },
+    ["@type.definition"] = { fg = colors.red },
     ["@todo"] = { fg = colors.orange, style = "bold" },
-    ["@type.qualifier"] = { fg = colors.red_key_w },
+    ["@type.qualifier"] = { fg = colors.red },
     ["@text.uri"] = { fg = colors.yellow, style = "underline" },
     ["@text.underline"] = { style = "underline" },
     ["@variable"] = { fg = colors.white },
-    ["@variable.builtin"] = { fg = colors.pink },
-    ["@define"] = { fg = colors.red_key_w },
+    ["@variable.builtin"] = { fg = colors.purple },
+    ["@define"] = { fg = colors.red },
     -----------------------------------------
-    ["@markup.heading.1.markdown"] = { bg = colors.red_key_w, fg = colors.fg },
+    ["@markup.heading.1.markdown"] = { bg = colors.red, fg = colors.fg },
     ["@markup.heading.2.markdown"] = { bg = colors.green, fg = colors.fg },
     ["@markup.heading.3.markdown"] = { bg = colors.orange, fg = colors.fg },
     ["@markup.heading.4.markdown"] = { bg = colors.yellow, fg = colors.fg },
-    ["@markup.heading.5.markdown"] = { bg = colors.blue_type, fg = colors.fg },
+    ["@markup.heading.5.markdown"] = { bg = colors.blue, fg = colors.fg },
     ["@markup.heading.6.markdown"] = { bg = colors.fg, fg = colors.bg },
     ["@markup.strong"] = { bg = colors.bg, fg = colors.yellow },
-    ["@markup.italic"] = { bg = colors.bg, fg = colors.red_key_w },
+    ["@markup.italic"] = { bg = colors.bg, fg = colors.red },
     ["@markup.quote"] = { bg = colors.bg, fg = colors.fg },
-    RenderMarkdownH1Bg = { fg = colors.fg, bg = colors.red_key_w },
+    RenderMarkdownH1Bg = { fg = colors.fg, bg = colors.red },
     RenderMarkdownH2Bg = { fg = colors.fg, bg = colors.green },
     RenderMarkdownH3Bg = { fg = colors.fg, bg = colors.orange },
     RenderMarkdownH4Bg = { fg = colors.fg, bg = colors.yellow },
-    RenderMarkdownH5Bg = { fg = colors.fg, bg = colors.blue_type },
+    RenderMarkdownH5Bg = { fg = colors.fg, bg = colors.blue },
     RenderMarkdownH6Bg = { fg = colors.bg, bg = colors.fg },
-    RenderMarkdownCode = { bg = colors.vsplit_bg },
-    RenderMarkdownBullet = { fg = colors.pink },
+    RenderMarkdownCode = { bg = colors.bg },
+    RenderMarkdownBullet = { fg = colors.purple },
     RenderMarkdownQuote = { fg = colors.fg, bg = colors.bg },
-    RenderMarkdownUnchecked = { fg = colors.pink },
+    RenderMarkdownUnchecked = { fg = colors.purple },
     RenderMarkdownChecked = { fg = colors.yellow },
     -- ChatSystem = { fg = colors.fg, bg = colors.context },
-    -- ChatUser = { fg = colors.fg, bg = colors.red_key_w },
+    -- ChatUser = { fg = colors.fg, bg = colors.red },
     -- ChatAssistant  = { fg = colors.fg, bg = colors.yellow }
 
-    LineflyNormal = { fg = colors.fg, bg = colors.red_key_w },
+    LineflyNormal = { fg = colors.fg, bg = colors.red },
     LineflyInsert = { fg = colors.fg, bg = colors.green },
     LineflyVisual = { fg = colors.fg, bg = colors.yellow },
-    LineflyError = { fg = colors.fg, bg = colors.red_err },
+    LineflyError = { fg = colors.fg, bg = colors.red },
     LineflyGitAdd = { fg = colors.fg, bg = colors.diff_add },
     LineflyGitChange = { fg = colors.fg, bg = colors.diff_change },
-    LineflyGitDelete = { fg = colors.fg, bg = colors.red_err },
-    LineflyDiagnosticError = { fg = colors.red_err },
-    LineflyDiagnosticWarning = { fg = colors.orange_wr },
+    LineflyGitDelete = { fg = colors.fg, bg = colors.red },
+    LineflyDiagnosticError = { fg = colors.red },
+    LineflyDiagnosticWarning = { fg = colors.orange },
     LineflyDiagnosticInformation = { fg = colors.yellow },
 }
 

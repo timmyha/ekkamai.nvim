@@ -2,7 +2,7 @@ return {
   fg               = "#ced6d1",
   bg               = "#1A1217",
   none             = "#1A1217",
-  --14161D
+
   dark             = '#1F1217',
   comment          = "#4C544F",
   popup_back       = '#4C544F',
@@ -21,14 +21,14 @@ return {
   selection_bg     = "#522f45",
   selection_fg     = "#496351",
   vsplit_fg        = "#cccccc",
-  vsplit_bg        = "#2b1820",
   visual_select_bg = "#3d2735",
 
-  red_key_w  = "#996E8B",
-  red_err    = "#996E8B",
-  green_func = '#639974',
+  red        = "#996E8B",
   green      = "#639974",
-  blue_type  = '#698799',
+  blue       = '#698799',
+  orange     = "#998870",
+  purple     = "#857499",
+  yellow     = "#8E8F61",
   black1     = "#272932",
   black      = "#0a0d0b",
   white1     = "#D7D7D7",
@@ -37,9 +37,4 @@ return {
   gray2      = "#6E7380",
   gray1      = '#343842',
   gray       = "#21252D",
-  orange     = "#998870",
-  boolean    = "#857499",
-  orange_wr  = "#998870",
-  pink       = "#857499",
-  yellow     = "#8E8F61",
 }
