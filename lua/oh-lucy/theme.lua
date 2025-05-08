@@ -15,8 +15,6 @@ M.base = {
     -----------------------------------------
     --        Editors settings
     -----------------------------------------
-    purples = { fg = colors.purple, style = config.italic_purples },
-
     Character = { fg = colors.yellow },
     ColorColumn = { bg = colors.black1 },
     Comment = { fg = colors.comment, style = "italic" },
@@ -31,9 +29,9 @@ M.base = {
     Debug = { fg = colors.fg },
     Define = { fg = colors.blue },
     Delimiter = { fg = colors.gray_punc },
-    DiffAdd = { fg = colors.green_func },
-    DiffAdded = { fg = colors.green_func },
-    DiffChange = { fg = colors.green_func },
+    DiffAdd = { fg = colors.green },
+    DiffAdded = { fg = colors.green },
+    DiffChange = { fg = colors.green },
     DiffDelete = { fg = colors.red },
     DiffRemoved = { fg = colors.red },
     DiffText = { fg = colors.white1 },
@@ -47,7 +45,7 @@ M.base = {
     FloatBorder = { fg = colors.gray2, bg = "NONE" },
     FoldColumn = { fg = colors.line_fg, bg = colors.bg },
     Folded = { fg = colors.white, bg = colors.gray },
-    Function = { fg = colors.green_func },
+    Function = { fg = colors.green },
 
     Identifier = { fg = colors.white1 },
     Ignore = { fg = colors.gray_punc },
@@ -95,7 +93,7 @@ M.base = {
     PreCondit = { fg = colors.blue },
     PreProc = { fg = colors.blue },
 
-    Question = { fg = colors.green_func },
+    Question = { fg = colors.green },
     QuickFixLine = { fg = colors.orange },
 
     Repeat = { fg = colors.red },
@@ -117,11 +115,11 @@ M.base = {
     StatusLine = { fg = colors.comment, bg = colors.bg },
     StatusLineNC = { fg = colors.comment, bg = colors.black },
     StatusLineSeparator = { fg = colors.dark },
-    StatusLineTerm = { fg = colors.green_func, bg = colors.black },
+    StatusLineTerm = { fg = colors.green, bg = colors.black },
     StatusLineTermNC = { fg = colors.gray_punc, bg = colors.black },
     StorageClass = { fg = colors.blue },
     String = { fg = colors.yellow },
-    Structure = { fg = colors.green_func },
+    Structure = { fg = colors.green },
     Substitute = { fg = colors.gray2, bg = colors.orange },
 
     TabLine = { fg = colors.line_fg },
@@ -227,7 +225,7 @@ M.plugins = {
     CmpItemAbbr = { fg = colors.fg },
     CmpItemAbbrMatch = { fg = colors.blue },
     CmpItemAbbrMatchFuzzy = { fg = colors.blue },
-    CmpItemKind = { fg = colors.green_func },
+    CmpItemKind = { fg = colors.green },
     CmpItemKindMethod = { fg = colors.blue },
     CmpItemKindConstructor = { fg = colors.yellow },
     CmpItemKindClass = { fg = colors.red },
@@ -248,7 +246,7 @@ M.plugins = {
     -----------------------------------------
     DashboardCenter = { fg = colors.white },
     DashboardFooter = { fg = colors.yellow },
-    DashboardHeader = { fg = colors.green_func },
+    DashboardHeader = { fg = colors.green },
     -----------------------------------------
 
     -----------------------------------------
@@ -274,7 +272,7 @@ M.plugins = {
     -----------------------------------------
     --   Gitsigns: github.com/lewis6991/gitsigns.nvim
     -----------------------------------------
-    GitSignsAdd = { fg = colors.green_func, bg = colors.line_bg },
+    GitSignsAdd = { fg = colors.green, bg = colors.line_bg },
     GitSignsChange = { fg = colors.diff_change, bg = colors.line_bg },
     GitSignsDelete = { fg = colors.red, bg = colors.line_bg },
     -----------------------------------------
@@ -336,16 +334,16 @@ M.plugins = {
     NERDTreeIgnore = { fg = colors.comment },
     NERDTreeHelpKey = { fg = colors.white },
     NERDTreeHelpTitle = { fg = colors.pink },
-    NERDTreeToggleOn = { fg = colors.green_func },
+    NERDTreeToggleOn = { fg = colors.green },
     NERDTreeToggleOff = { fg = colors.orange },
     NERDTreeHelpCommand = { fg = colors.yellow },
     NERDTreeFile = { fg = colors.white },
     NERDTreeLinkTarget = { fg = colors.blue },
-    NERDTreeLinkFile = { fg = colors.green_func },
+    NERDTreeLinkFile = { fg = colors.green },
     NERDTreeLinkDir = { fg = colors.pink },
     NERDTreeNodeDelimiters = { fg = colors.comment },
     NERDTreeDirSlash = { fg = colors.comment },
-    NERDTreeExecFile = { fg = colors.green_func },
+    NERDTreeExecFile = { fg = colors.green },
     NERDTreeRO = { fg = colors.orange },
     NERDTreeBookmarkName = { fg = colors.orange },
     NERDTreeFlags = { fg = colors.red },
@@ -422,7 +420,7 @@ M.plugins = {
     -----------------------------------------
     pythonConditional = { fg = colors.red },
     pythonException = { fg = colors.pink },
-    pythonFunction = { fg = colors.green_func },
+    pythonFunction = { fg = colors.green },
     pythonInclude = { fg = colors.red },
     pythonOperator = { fg = colors.red },
     pythonStatement = { fg = colors.white },
@@ -475,7 +473,7 @@ M.plugins = {
     -----------------------------------------
     TelescopeBorder = { fg = colors.white, bg = config.transparent_background and "NONE" or colors.bg },
     TelescopeMatching = { fg = colors.blue },
-    TelescopePromptPrefix = { fg = colors.green_func },
+    TelescopePromptPrefix = { fg = colors.green },
     TelescopeSelection = { fg = colors.line_fg, bg = colors.black },
     -----------------------------------------
 
@@ -548,7 +546,6 @@ M.plugins = {
     -----------------------------------------
     ["@annotation"] = { fg = colors.yellow },
     ["@attribute"] = { fg = colors.white },
-    ["@purple"] = { fg = colors.purple, style = config.italic_purples },
     ["@character"] = { fg = colors.yellow },
     ["@character.special"] = { fg = colors.yellow },
     ["@comment"] = { fg = colors.comment, style = "italic" },
@@ -562,10 +559,10 @@ M.plugins = {
     ["@exception"] = { fg = colors.red },
     ["@field"] = { fg = colors.white },
     ["@float"] = { fg = colors.pink },
-    ["@function.builtin"] = { fg = colors.green_func },
+    ["@function.builtin"] = { fg = colors.green },
     ["@function.macro"] = { fg = colors.blue },
-    ["@function"] = { fg = colors.green_func },
-    ["@function.call"] = { fg = colors.green_func },
+    ["@function"] = { fg = colors.green },
+    ["@function.call"] = { fg = colors.green },
     ["@include"] = { fg = colors.red },
     ["@keyword"] = { fg = colors.red },
     ["@keyword.function"] = { fg = colors.red },
@@ -574,8 +571,8 @@ M.plugins = {
     ["@none"] = { fg = colors.orange },
     ["@label"] = { fg = colors.pink },
     ["@text.literal"] = { fg = colors.yellow },
-    ["@method"] = { fg = colors.green_func },
-    ["@method.call"] = { fg = colors.green_func },
+    ["@method"] = { fg = colors.green },
+    ["@method.call"] = { fg = colors.green },
     ["@namespace"] = { fg = colors.blue },
     ["@number"] = { fg = colors.pink },
     ["@operator"] = { fg = colors.red },
