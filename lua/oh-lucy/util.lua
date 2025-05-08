@@ -6,7 +6,7 @@ local function highlight(group, properties)
     local style = properties.style == nil and "" or "gui=" .. properties.style
     local sp = properties.sp == nil and "" or "guisp=" .. properties.sp
     local cmd = table.concat({ "highlight", group, bg, fg, style, sp }, " ")
-    vim.api.nvim_command(cmd)
+    vim.cmd(cmd)
 end
 
 function M.load(theme)
