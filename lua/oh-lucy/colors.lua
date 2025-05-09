@@ -23,7 +23,7 @@ return {
   vsplit_fg        = "#cccccc",
   visual_select_bg = "#3d2735",
 
-  red        = "#996e8e",
+  red        = "#996E8B",
   green      = "#639974",
   blue       = "#698799",
   orange     = "#998870",
