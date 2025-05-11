@@ -1,5 +1,5 @@
-local colors = require "oh-lucy.colors"
-local config = require "oh-lucy.config"
+local colors = require "ekkamai.colors"
+local config = require "ekkamai.config"
 
 local M = {}
 
