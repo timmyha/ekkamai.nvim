@@ -4,17 +4,10 @@ local config = require "ekkamai.config"
 local M = {}
 
 M.base = {
-    ---------------------------------------
-    --        Styles
-    ---------------------------------------
     Bold = { style = "bold" },
     Italic = { style = "italic" },
     Underlined = { style = "underline" },
-    ---------------------------------------
 
-    -----------------------------------------
-    --        Editors settings
-    -----------------------------------------
     Character = { fg = colors.yellow },
     ColorColumn = { bg = colors.black1 },
     Comment = { fg = colors.comment, style = "italic" },
@@ -170,17 +163,11 @@ M.base = {
     markdownIdDelimiter = { fg = colors.gray2 },
     markdownLinkDelimiter = { fg = colors.gray2 },
     markdownOrderedListMarker = { fg = colors.red },
-
-    -----------------------------------------
-    --        end Editors settings
-    -----------------------------------------
 }
 
 M.plugins = {
 
-    -----------------------------------------
-    --   Buffer:
-    -----------------------------------------
+    -- buffer
     BufferCurrent = { fg = colors.fg, bg = colors.gray },
     BufferCurrentIndex = { fg = colors.fg, bg = colors.bg },
     BufferCurrentMod = { fg = colors.yellow, bg = colors.bg },
@@ -208,7 +195,6 @@ M.plugins = {
     BufferLineBufferVisible = { fg = colors.fg, bg = colors.bg },
     BufferLineBackground = { fg = colors.fg, bg = colors.bg },
 
-    -----------------------------------------
 
     WhichKey = { fg = colors.blue },
     WhichKeySeperator = { fg = colors.red },
@@ -216,9 +202,7 @@ M.plugins = {
     WhichKeyDesc = { fg = colors.white },
     WhichKeyFloat = { bg = colors.dark },
 
-    -----------------------------------------
-    --   Cmp:    github.com/hrsh7th/nvim-cmp
-    -----------------------------------------
+    --hrsh7th/nvim-cmp
     CmpItemAbbrDeprecated = { fg = colors.comment },
     CmpDocumentation = { fg = colors.fg },
     CmpDocumentationBorder = { fg = colors.gray2 },
@@ -239,26 +223,20 @@ M.plugins = {
     CmpItemKindKeyword = { fg = colors.pink },
     CmpItemMenu = { fg = colors.pink },
     CmpItemKindOperator = { fg = colors.red },
-    -----------------------------------------
 
-    -----------------------------------------
-    --    Dashboard: github.com/glepnir/dashboard-nvim
-    -----------------------------------------
+
+    --glepnir/dashboard-nvim
     DashboardCenter = { fg = colors.white },
     DashboardFooter = { fg = colors.yellow },
     DashboardHeader = { fg = colors.green },
-    -----------------------------------------
 
-    -----------------------------------------
-    --   Debug:
-    -----------------------------------------
+
+    --debug
     debugBreakpoint = { fg = colors.red, style = "reverse" },
     debugPc = { bg = colors.white1 },
-    -----------------------------------------
+  
 
-    -----------------------------------------
-    --   Diffview
-    -----------------------------------------
+    --diffview
     DiffViewNormal = { fg = colors.gray2, bg = colors.dark },
     DiffviewFilePanelDeletion = { fg = colors.red },
     DiffviewFilePanelInsertion = { fg = colors.diff_add },
@@ -267,36 +245,27 @@ M.plugins = {
     DiffviewStatusModified = { fg = colors.diff_change },
     DiffviewStatusRenamed = { fg = colors.diff_change },
     DiffviewVertSplit = { bg = colors.bg },
-    -----------------------------------------
 
-    -----------------------------------------
-    --   Gitsigns: github.com/lewis6991/gitsigns.nvim
-    -----------------------------------------
+
+    --lewis6991/gitsigns.nvim
     GitSignsAdd = { fg = colors.green, bg = colors.line_bg },
     GitSignsChange = { fg = colors.diff_change, bg = colors.line_bg },
     GitSignsDelete = { fg = colors.red, bg = colors.line_bg },
-    -----------------------------------------
 
-    -----------------------------------------
-    -- gitgutter: github.com/airblade/vim-gitgutter
-    -----------------------------------------
+
+    --airblade/vim-gitgutter
     GitGutterAdd = { fg = colors.diff_add },
     GitGutterChange = { fg = colors.diff_change },
     GitGutterDelete = { fg = colors.red },
-    -----------------------------------------
 
-    -----------------------------------------
-    --  Indent-blankline: github.com/lukas-reineke/indent-blankline.nvim
-    -----------------------------------------
+
+    --lukas-reineke/indent-blankline.nvim
     IndentBlanklineChar = { fg = colors.black1 },
     IndentBlanklineContextChar = { fg = colors.gray2 },
     IndentBlanklineSpaceChar = { fg = colors.white1 },
     IndentBlanklineSpaceCharBlankline = { fg = colors.yellow },
-    -----------------------------------------
 
-    -----------------------------------------
-    --   Lsp: neovim.io/doc/user/lsp.html
-    -----------------------------------------
+    --LSP
     DiagnosticVirtualTextInfo = { fg = colors.yellow },
     DiagnosticHint = { fg = colors.blue },
     DiagnosticError = { fg = colors.red },
@@ -321,11 +290,36 @@ M.plugins = {
 
     DiagnosticVirtualTextError = { fg = colors.red },
     DiagnosticVirtualTextHint = { fg = colors.gray2 },
-    -----------------------------------------
+
+    LspDiagnosticsDefaultHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsFloatingError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsFloatingHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsFloatingInformation = { fg = colors.yellow }, -- Deprecated
+    LspDiagnosticsFloatingWarning = { fg = colors.orange }, -- Deprecated
+    LspDiagnosticsHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsInformation = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsSignHint = { fg = colors.blue }, -- Deprecated
+    LspDiagnosticsSignInformation = { fg = colors.blue, bg = colors.bg }, -- Deprecated
+    LspDiagnosticsSignWarning = { fg = colors.orange }, -- Deprecated
+    LspDiagnosticsUnderlineError = { style = "underline" }, -- Deprecated
+    LspDiagnosticsUnderlineHint = { style = "underline" }, -- Deprecated
+    LspDiagnosticsUnderlineWarning = { style = "underline" }, -- Deprecated
+    LspDiagnosticsVirtualTextWarning = { fg = colors.orange }, -- Deprecated
+    LspDiagnosticsWarning = { fg = colors.orange }, -- Deprecated
+    LspReferenceRead = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
+    LspReferenceText = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
+    LspReferenceWrite = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
+    LspDiagnosticsDefaultError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsSignError = { fg = colors.red }, -- Deprecated
+    LspDiagnosticsDefaultWarning = { fg = colors.yellow }, -- Deprecated
+    LspDiagnosticsDefaultInformation = { fg = colors.yellow }, -- Deprecated
+    LspDiagnosticsVirtualTextHint = { fg = colors.gray2 }, -- Deprecated
+    LspDiagnosticsVirtualTextInformation = { fg = colors.yellow }, -- Deprecated
+    LspDiagnosticsUnderlineInformation = { style = "underline" }, -- Deprecated
 
     -----------------------------------------
-    -- NerdTree: github.com/preservim/nerdtree
-    -----------------------------------------
+    --preservim/nerdtree
     Directory = { fg = colors.white },
     NERDTreeUp = { fg = colors.yellow },
     NERDTreeDir = { fg = colors.blue },
@@ -355,9 +349,8 @@ M.plugins = {
     NERDTreePartFile = { fg = colors.blue },
     NERDTreeCurrentNode = { fg = colors.comment },
 
-    -----------------------------------------
-    -- Startify: github.com/mhinz/vim-startify
-    -----------------------------------------
+
+    --mhinz/vim-startify
     StartifyEndOfBuffer = { fg = colors.non_text },
     StartifyNumber = { fg = colors.red },
     StartifySelect = { fg = colors.comment },
@@ -371,53 +364,13 @@ M.plugins = {
     StartifyFooter = { fg = colors.pink },
     StartifySection = { fg = colors.pink },
 
-    -----------------------------------------
-    --   LspDiagnostics:
-    -----------------------------------------
-    LspDiagnosticsDefaultHint = { fg = colors.blue }, -- Deprecated
-    LspDiagnosticsError = { fg = colors.red }, -- Deprecated
-    LspDiagnosticsFloatingError = { fg = colors.red }, -- Deprecated
-    LspDiagnosticsFloatingHint = { fg = colors.blue }, -- Deprecated
-    LspDiagnosticsFloatingInformation = { fg = colors.yellow }, -- Deprecated
-    LspDiagnosticsFloatingWarning = { fg = colors.orange }, -- Deprecated
-    LspDiagnosticsHint = { fg = colors.blue }, -- Deprecated
-    LspDiagnosticsInformation = { fg = colors.blue }, -- Deprecated
-    LspDiagnosticsSignHint = { fg = colors.blue }, -- Deprecated
-    LspDiagnosticsSignInformation = { fg = colors.blue, bg = colors.bg }, -- Deprecated
-    LspDiagnosticsSignWarning = { fg = colors.orange }, -- Deprecated
-    LspDiagnosticsUnderlineError = { style = "underline" }, -- Deprecated
-    LspDiagnosticsUnderlineHint = { style = "underline" }, -- Deprecated
-    LspDiagnosticsUnderlineWarning = { style = "underline" }, -- Deprecated
-    LspDiagnosticsVirtualTextWarning = { fg = colors.orange }, -- Deprecated
-    LspDiagnosticsWarning = { fg = colors.orange }, -- Deprecated
-    LspReferenceRead = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
-    LspReferenceText = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
-    LspReferenceWrite = { bg = colors.fg_gutter, style = "bold" }, -- Deprecated
-    LspDiagnosticsDefaultError = { fg = colors.red }, -- Deprecated
-    LspDiagnosticsSignError = { fg = colors.red }, -- Deprecated
-    LspDiagnosticsDefaultWarning = { fg = colors.yellow }, -- Deprecated
-    LspDiagnosticsDefaultInformation = { fg = colors.yellow }, -- Deprecated
-    LspDiagnosticsVirtualTextHint = { fg = colors.gray2 }, -- Deprecated
-    LspDiagnosticsVirtualTextInformation = { fg = colors.yellow }, -- Deprecated
-    LspDiagnosticsUnderlineInformation = { style = "underline" }, -- Deprecated
-    -----------------------------------------
 
-    -----------------------------------------
-    -- VIM INDENT GUIDES:   github.com/nathanaelkane/vim-indent-guides
-    -----------------------------------------
+    --nathanaelkane/vim-indent-guides
     IndentGuidesEven = { fg = colors.white1 },
     IndentGuidesOdd = { fg = colors.comment },
-    -----------------------------------------
 
-    -----------------------------------------
-    --   flutter-tools.nvim:    github.com/akinsho/flutter-tools.nvim/
-    -----------------------------------------
-    FlutterWidgetGuides = { fg = colors.gray2 },
-    -----------------------------------------
 
-    -----------------------------------------
-    -- for python language:
-    -----------------------------------------
+    --python
     pythonConditional = { fg = colors.red },
     pythonException = { fg = colors.pink },
     pythonFunction = { fg = colors.green },
@@ -425,27 +378,22 @@ M.plugins = {
     pythonOperator = { fg = colors.red },
     pythonStatement = { fg = colors.white },
     pythonpink = { fg = colors.white },
-    -----------------------------------------
 
-    -----------------------------------------
-    --    Neogit: github.com/TimUntersberger/neogit
-    -----------------------------------------
+
+    --TimUntersberger/neogit
     NeogitBranch = { fg = colors.pink },
     NeogitRemote = { fg = colors.pink },
     NeogitHunkHeader = { fg = colors.accent, bg = colors.dark },
     NeogitDiffContext = { fg = colors.accent, bg = colors.bg },
     NeogitDiffAdd = { fg = colors.diff_add, bg = colors.dark },
     NeogitDiffDelete = { fg = colors.red, bg = colors.dark },
-    -- Neogit...Highlight is when group is focused
     NeogitHunkHeaderHighlight = { fg = colors.accent, bg = colors.dark },
     NeogitDiffContextHighlight = { fg = colors.accent, bg = colors.bg },
     NeogitDiffAddHighlight = { fg = colors.diff_add, bg = colors.dark },
     NeogitDiffDeleteHighlight = { fg = colors.red, bg = colors.dark },
-    -----------------------------------------
 
-    -----------------------------------------
-    --   Nvim-tree: github.com/kyazdani42/nvim-tree.lua
-    -----------------------------------------
+
+    --kyazdani42/nvim-tree.lua
     NvimTreeEmptyFolderName = { fg = colors.yellow, style = "italic" },
     NvimTreeCursorLine = { fg = colors.line_fg, bg = colors.black1 },
     NvimTreeExecFile = { fg = colors.green },
@@ -466,21 +414,19 @@ M.plugins = {
     NvimTreeSymlink = { fg = colors.yellow },
     NvimTreeVertSplit = { fg = colors.black },
     NvimTreeEndOfBuffer = { fg = colors.non_text },
-    -----------------------------------------
 
-    -----------------------------------------
-    --    telescope: github.com/nvim-telescope/telescope.nvim
-    -----------------------------------------
+
+    --nvim-telescope/telescope.nvim
     TelescopeBorder = { fg = colors.white, bg = config.transparent_background and "NONE" or colors.bg },
     TelescopeMatching = { fg = colors.blue },
     TelescopePromptPrefix = { fg = colors.green },
     TelescopeSelection = { fg = colors.line_fg, bg = colors.black },
-    -----------------------------------------
 
-    -----------------------------------------
-    -- https://github.com/folke/trouble.nvim
-    -----------------------------------------
-    -----------------------------------------
+    --ibhagwan/fzf-lua
+    FzfLuaBorder = { fg = colors.white, bg = config.transparent_background and "NONE" or colors.bg },
+    FzfLuaFzfMatch = { fg = colors.blue },
+
+    --folke/trouble.nvim
     TroubleTextInformation = { fg = colors.blue },
     TroubleFile = { fg = colors.yellow }, -- the source file that has error
     TroubleFoldIcon = { fg = colors.blue }, -- fold icon color
@@ -509,12 +455,8 @@ M.plugins = {
     TroubleTextHint = { fg = colors.white },
     TroubleText = { fg = colors.white },
 
-    -----------------------------------------
 
-    -----------------------------------------
-    -- CodeActionMenu: github.com/weilbith/nvim-code-action-menu
-    -----------------------------------------
-
+    --weilbith/nvim-code-action-menu
     CodeActionMenuWarningMessageText = { fg = colors.orange },
     CodeActionMenuWarningMessageBorder = { fg = colors.red },
     CodeActionMenuMenuIndex = { fg = colors.blue },
@@ -528,10 +470,8 @@ M.plugins = {
     CodeActionMenuDetailsDisabled = { fg = colors.comment },
     CodeActionMenuDetailsUndefined = { fg = colors.comment },
 
-    -----------------------------------------
-    -- MAKE
-    -----------------------------------------
 
+    --make
     cmakeCommand = { fg = colors.white },
     cmakeArguments = { fg = colors.white },
     cmakeKWvariable_watch = { fg = colors.white },
@@ -539,11 +479,9 @@ M.plugins = {
     cmakeGeneratorExpressions = { fg = colors.pink },
     cmakeVariable = { fg = colors.white },
     cmakeKWuse_mangled_mesa = { fg = colors.fg, style = "italic" },
-    -----------------------------------------
 
-    -----------------------------------------
-    -- treesitter:  github.com/nvim-treesitter/nvim-treesitter
-    -----------------------------------------
+
+    --treesitter
     ["@annotation"] = { fg = colors.yellow },
     ["@attribute"] = { fg = colors.white },
     ["@character"] = { fg = colors.yellow },
@@ -604,7 +542,7 @@ M.plugins = {
     ["@variable"] = { fg = colors.white },
     ["@variable.builtin"] = { fg = colors.pink },
     ["@define"] = { fg = colors.red },
-    -----------------------------------------
+
     ["@markup.heading.1.markdown"] = { bg = colors.red, fg = colors.fg },
     ["@markup.heading.2.markdown"] = { bg = colors.green, fg = colors.fg },
     ["@markup.heading.3.markdown"] = { bg = colors.orange, fg = colors.fg },
@@ -625,10 +563,8 @@ M.plugins = {
     RenderMarkdownQuote = { fg = colors.fg, bg = colors.bg },
     RenderMarkdownUnchecked = { fg = colors.pink },
     RenderMarkdownChecked = { fg = colors.yellow },
-    -- ChatSystem = { fg = colors.fg, bg = colors.context },
-    -- ChatUser = { fg = colors.fg, bg = colors.red },
-    -- ChatAssistant  = { fg = colors.fg, bg = colors.yellow }
 
+    --bluz71/nvim-linefly
     LineflyNormal = { fg = colors.fg, bg = colors.red },
     LineflyInsert = { fg = colors.fg, bg = colors.green },
     LineflyVisual = { fg = colors.fg, bg = colors.yellow },
